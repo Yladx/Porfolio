@@ -7,46 +7,314 @@
   <meta name="description" content="">
   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
   <meta name="generator" content="Hugo 0.72.0">
-  <title>Carousel Template · Bootstrap</title>
+  <title>Porfolio</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
  <style>
+*{
+    margin: 0;
+    padding: 0;
+}
 
+body {   
+  font-family: "Pixelify Sans", sans-serif;   
+          height: 100vh;      
+          margin: 0;
+          background-color: #6b6a6dbe; /* Fallback color */      
+      }
+
+
+body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(wp.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+           
+    opacity: .4;
+            z-index: -1; /* Place behind all other content */
+        }
+
+
+
+header {
+    position: relative; /* Ensure header is positioned correctly */
+    z-index: 10; /* Ensure header has a higher z-index if needed */
+}
+
+
+
+main { 
+    width: 74%;
+ margin-bottom: 0;
+   padding: 8.5vw;
+border: solid springgreen;
+left: 0;
+}
+
+
+
+
+ #try {
+        margin: 0;
+        padding: 0;
+            position: fixed;
+            bottom: 0vh;
+            right: 3vw;
+            width: 30vw; /* Set width relative to viewport height */
+            height: 95vh; /* Maintain aspect ratio */
+            display: block; /* Remove any extra space below the image */
+            z-index: 3;
+
+
+          
+        }
+     
+ .glitch{
+  animation: glitch 2s linear infinite;
+  filter: drop-shadow(5px 0 0 rgb(86, 86, 86)) 
+  drop-shadow(0 5px 0 rgb(57, 57, 57))
+  drop-shadow(-5px 0 0 white) 
+  drop-shadow(0 -5px 0 rgb(80, 80, 80));
+
+}
+
+@keyframes glitch{
+  2%,64%{
+    transform: translate(2px,0) skew(0deg);
+  }
+  4%,60%{
+    transform: translate(-2px,0) skew(0deg);
+  }
+  62%{
+    transform: translate(0,0) skew(5deg); 
+  }
+}
+
+.glitch:before,
+.glitch:after{
+  content: attr(title);
+  position: absolute;
+  left: 0;
+}
+
+.glitch:before{
+  animation: glitchTop 1s linear infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+@keyframes glitchTop{
+  2%,64%{
+    transform: translate(2px,-2px);
+  }
+  4%,60%{
+    transform: translate(-2px,2px);
+  }
+  62%{
+    transform: translate(13px,-1px) skew(-13deg); 
+  }
+}
+
+.glitch:after{
+  animation: glitchBotom 1.5s linear infinite;
+  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBotom{
+  2%,64%{
+    transform: translate(-2px,0);
+  }
+  4%,60%{
+    transform: translate(-2px,0);
+  }
+  62%{
+    transform: translate(-22px,5px) skew(21deg); 
+  }
+}
+.dropdown-toggle::after {
+            display: none;
+        }
     
+        btn-lg{
+          color: #4e22a8be;
+        }
+        .btn {
+    background-color: #e0e4e0; /* Button color */
+    color: #0b0b0b; /* Text color */
+    border-style: groove;
+    border: 20px white;
+    font-size: 25px;
+    margin: 5px;
+}
+.btn:hover{
+  background-color: rgb(11, 11, 11);
+}
+
+.dropdown-item i{
+  margin-right: 10px; font-size: 20px;
+} 
+
+
+
+
+
+
  </style>
 </head>
 
 <body>
-
+     
     <header>
-        <div class="dropdown">
-            <a class="btn btn-secondary btn-lg  dropdown-toggle m-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i  class="bi bi-three-dots "></i>
+
+        <div class="dropdown z-3 m-2 position-fixed">
+            <a class="btn btn-secondary btn-lg  dropdown-toggle z-3 custom-btn"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-list"></i>
             </a>
           
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Start</a></li>
-              <li><a class="dropdown-item" href="#">About Me</a></li>
-              <li><a class="dropdown-item" href="#">Skills</a></li>
-              <li><a class="dropdown-item" href="#">Porfolio</a></li>
-              <li><a class="dropdown-item" href="#">Contactme</a></li>
+              <li><a class="dropdown-item" href="#home-start"> <i class="bi bi-house-fill"></i> Start</a></li>
+              <li><a class="dropdown-item" href="#AboutMe"><i class="bi bi-person-circle"></i>About Me</a></li>
+              <li><a class="dropdown-item" href="#"><i class="bi bi-person-fill-gear"></i> Skills</a></li>
+              <li><a class="dropdown-item" href="#"><i class="bi bi-folder-fill"></i> Porfolio</a></li> 
+              <li><a class="dropdown-item" href="#"> <i class="bi bi-telephone-fill "  ></i> Contactme</a></li>
             </ul>
           </div>
-    </header>
+        </header>
     
-<aside>
+   
+ 
+   
+    <img src="pxArt.png" alt="" id="try" class="glitch">
 
-</aside>
+   
+    
+       <main >
+    
+        <section id="#home-start">
+       
+          <div class="container text-center lh-1"> 
+
+            <div class="container-fluid">
+              <H1 style="font-size: 50px;"><strong>HELLO IM,</strong></H1>
+              <h2>Ylad</h2>
+              <h2>an It Stundent</h2>
+            </div>
+       
+          <div class="d-flex justify-content-center align-items-center text-center mt-2">
+            <a href="#"><i class="bi bi-twitter text-dark mx-1 fs-3 p-2"></i></a>
+            <a href="#"><i class="bi bi-facebook text-dark mx-1 fs-3 p-2"></i></a>
+            <a href="#"><i class="bi bi-linkedin text-dark mx-1 fs-3 p-2"></i></a>
+            <a href="#"><i class="bi bi-instagram text-dark mx-1 fs-3 p-2"></i></a>
+          </div>
+
+        </div>
+        </section>
+
+        <section class="mt-5" style="text-align: justify;" id="AboutMe">
+
+          <div class="container w-80 h-100 b-0 " > 
+  
+            <H1 style="font-size: 50px;"><strong>ABOUT ME</strong></H1>
+            
+           <p>readme. Our package.json is also included, though our npm scripts are primarily available for our development workflows.
+            Releases are published on GitHub and include icon SVGs, fonts, license, and readme. Our package.json is also included, though our npm scripts are primarily available for our development workflows.
+            Releases are published on GitHub and include icon SVGs, fonts, license, and readme. Our package.json is also included, though our npm scripts are primarily available for our development workflows.
+            Releases are published on GitHub and include icon SVGs, fonts, license, and readme. Our package.json is also included, though our npm scripts are primarily available for our development workflows.
+           leases are published on GitHub and include icon SVGs, fonts, license, andnd readme. Our package.json is also included, though our npm scripts are primarily available for our development workflows.
+   
+           <div class="d-flex justify-content-center align-items-center"> 
+       <!-- Modal trigger button -->
+       <button
+      
+       type="button"
+       class="btn btn-primary btn-sm  w-10"
+       data-bs-toggle="modal"
+       data-bs-target="#modalId"
+     >
+       Launch
+     </button>
+     
+     <!-- Modal Body -->
+     <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+     <div
+       class="modal fade"
+       id="modalId"
+       tabindex="-1"
+       data-bs-backdrop="static"
+       data-bs-keyboard="false"
+       
+       role="dialog"
+       aria-labelledby="modalTitleId"
+       aria-hidden="true"
+     >
+       <div
+         class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"
+         role="document"
+       >
+         <div class="modal-content">
+           <div class="modal-header">
+             <h5 class="modal-title" id="modalTitleId">
+               RESUME/CV
+             </h5>
+             <button
+               type="button"
+               class="btn-close"
+               data-bs-dismiss="modal"
+               aria-label="Close"
+             ></button>
+           </div>
+           <div class="modal-body">
+            
+            
+            <embed type="image/jpg" src="WP.jpg" width="300" height="200">
+          
+          </div>
+           <div class="modal-footer">
+             <button
+               type="button"
+               class="btn btn-secondary"
+               data-bs-dismiss="modal"
+             >
+               Close
+             </button>
+
+           </div>
+         </div>
+       </div>
+     </div>
+      </div>
+       
+          
+          </p> 
+           </div>
+
+    
+        </section>
 
 
-    <main>
 
 
+        <section>
 
-    </main>
+
+        </section>
+            </main>
+
+       
+           
+
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

@@ -1,0 +1,23 @@
+[
+    {
+      "year": "2017",
+      "company": "MusterFirma",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      "year": "2015",
+      "company": "MusterFirma",
+      "description": "Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris."
+    },
+    {
+      "year": "2009",
+      "company": "MusterFirma",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      "year": "2001",
+      "company": "MusterFirma",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    }
+  ]
+  

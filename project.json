@@ -1,0 +1,195 @@
+[
+    {
+      "classification": ["HTML", "CSS", "JS"],
+      "project_title": "Leaf Legacy",
+      "image": {
+        "src": "Resources/Project-Picture/Leaf-Legacy.png",
+        "alt": "ICT-TECH Support",
+        "category": "WEB",
+        "githublink": "github.com"
+      },
+      "modal": {
+        "type": "carousel",
+        "content": [
+          {
+            "img": "https://github.com/Yladx/ES-Static-Deforestation-Website/raw/main/Ouput-Images/Home.png",
+            "caption": "First slide label",
+            "description": "Some representative placeholder content for the first slide."
+          },
+          {
+            "img": "https://github.com/Yladx/ES-Static-Deforestation-Website/raw/main/Ouput-Images/Discover-1.png",
+            "caption": "Second slide label",
+            "description": "Some representative placeholder content for the second slide."
+          },
+          {
+            "img": "https://github.com/Yladx/ES-Static-Deforestation-Website/raw/main/Ouput-Images/Discover-2.png",
+            "caption": "Third slide label",
+            "description": "Some representative placeholder content for the third slide."
+          },
+          {
+            "img": "https://github.com/Yladx/ES-Static-Deforestation-Website/raw/main/Ouput-Images/Discover-3.png",
+            "caption": "Fourth slide label",
+            "description": "Some representative placeholder content for the fourth slide."
+          }
+        ]
+      }
+    },
+    {
+      "classification": ["Java"],
+      "project_title": "ICT-Tech Support",
+      "image": {
+        "src": "Resources/Project-Picture/Ict-Tech Support.png",
+        "alt": "ICT-TECH Support",
+         "category": "WEB",
+          "githublink": "github.com"
+      },
+      "modal": {
+        "type": "video",
+        "content": {
+          "videoSrc": "https://drive.google.com/file/d/1z68e6E2TLP0t4TjtcRUZwPVEpclweZXy/preview",
+          "description": "Some placeholder content for the collapse component."
+        }
+      }
+    },
+    {
+        "classification": ["HTML", "CSS", "JS", "php"],
+        "project_title": "Market Stall Invent and Cashiering",
+        "image": {
+          "src": "Resources/Project-Picture/Leaf-Legacy.png",
+          "alt": "ICT-TECH Support",
+         "category": "WEB",
+          "githublink": "github.com"
+        },
+        "modal": {
+          "type": "carousel",
+          "content": [
+            {
+              "img": "https://github.com/Yladx/ES-Static-Deforestation-Website/raw/main/Ouput-Images/Home.png",
+              "caption": "First slide label",
+              "description": "Some representative placeholder content for the first slide."
+            },
+            {
+              "img": "https://github.com/Yladx/ES-Static-Deforestation-Website/raw/main/Ouput-Images/Discover-1.png",
+              "caption": "Second slide label",
+              "description": "Some representative placeholder content for the second slide."
+            },
+            {
+              "img": "https://github.com/Yladx/ES-Static-Deforestation-Website/raw/main/Ouput-Images/Discover-2.png",
+              "caption": "Third slide label",
+              "description": "Some representative placeholder content for the third slide."
+            },
+            {
+              "img": "https://github.com/Yladx/ES-Static-Deforestation-Website/raw/main/Ouput-Images/Discover-3.png",
+              "caption": "Fourth slide label",
+              "description": "Some representative placeholder content for the fourth slide."
+            }
+          ]
+        }
+      }, 
+      {
+        "classification": ["HTML", "CSS", "JS", "php"],
+        "project_title": "SDG Surveyor",
+        "image": {
+          "src": "Resources/Project-Picture/SDG-Surveyor.png",
+          "alt": "ICT-TECH Support",
+         "category": "WEB",
+          "githublink": "github.com"
+        },
+        "modal": {
+          "type": "carousel",
+          "content": [
+            {
+              "img": "https://github.com/Yladx/ES-Static-Deforestation-Website/raw/main/Ouput-Images/Home.png",
+              "caption": "First slide label",
+              "description": "Some representative placeholder content for the first slide."
+            },
+            {
+              "img": "https://github.com/Yladx/ES-Static-Deforestation-Website/raw/main/Ouput-Images/Discover-1.png",
+              "caption": "Second slide label",
+              "description": "Some representative placeholder content for the second slide."
+            },
+            {
+              "img": "https://github.com/Yladx/ES-Static-Deforestation-Website/raw/main/Ouput-Images/Discover-2.png",
+              "caption": "Third slide label",
+              "description": "Some representative placeholder content for the third slide."
+            },
+            {
+              "img": "https://github.com/Yladx/ES-Static-Deforestation-Website/raw/main/Ouput-Images/Discover-3.png",
+              "caption": "Fourth slide label",
+              "description": "Some representative placeholder content for the fourth slide."
+            }
+          ]
+        }
+      },
+      {
+        "classification": ["C++"],
+        "project_title": "Diary Mate",
+        "image": {
+          "src": "Resources/Project-Picture/Leaf-Legacy.png",
+          "alt": "ICT-TECH Support",
+         "category": "windows",
+          "githublink": "https://codepen.io/derekshirk/pen/JKwdYj"
+        },
+        "modal": {
+          "type": "carousel",
+          "content": [
+            {
+              "img": "https://github.com/Yladx/ES-Static-Deforestation-Website/raw/main/Ouput-Images/Home.png",
+              "caption": "First slide label",
+              "description": "Some representative placeholder content for the first slide."
+            },
+            {
+              "img": "https://github.com/Yladx/ES-Static-Deforestation-Website/raw/main/Ouput-Images/Discover-1.png",
+              "caption": "Second slide label",
+              "description": "Some representative placeholder content for the second slide."
+            },
+            {
+              "img": "https://github.com/Yladx/ES-Static-Deforestation-Website/raw/main/Ouput-Images/Discover-2.png",
+              "caption": "Third slide label",
+              "description": "Some representative placeholder content for the third slide."
+            },
+            {
+              "img": "https://github.com/Yladx/ES-Static-Deforestation-Website/raw/main/Ouput-Images/Discover-3.png",
+              "caption": "Fourth slide label",
+              "description": "Some representative placeholder content for the fourth slide."
+            }
+          ]
+        }
+      },
+      {
+        "classification": ["C++"],
+        "project_title": "Diary Mate",
+        "image": {
+          "src": "Resources/Project-Picture/Leaf-Legacy.png",
+          "alt": "ICT-TECH Support",
+         "category": "WEB",
+          "githublink": "https://chatgpt.com/"
+        },
+        "modal": {
+          "type": "carousel",
+          "content": [
+            {
+              "img": "https://github.com/Yladx/ES-Static-Deforestation-Website/raw/main/Ouput-Images/Home.png",
+              "caption": "First slide label",
+              "description": "Some representative placeholder content for the first slide."
+            },
+            {
+              "img": "https://github.com/Yladx/ES-Static-Deforestation-Website/raw/main/Ouput-Images/Discover-1.png",
+              "caption": "Second slide label",
+              "description": "Some representative placeholder content for the second slide."
+            },
+            {
+              "img": "https://github.com/Yladx/ES-Static-Deforestation-Website/raw/main/Ouput-Images/Discover-2.png",
+              "caption": "Third slide label",
+              "description": "Some representative placeholder content for the third slide."
+            },
+            {
+              "img": "https://github.com/Yladx/ES-Static-Deforestation-Website/raw/main/Ouput-Images/Discover-3.png",
+              "caption": "Fourth slide label",
+              "description": "Some representative placeholder content for the fourth slide."
+            }
+          ]
+        }
+      }
+  ]
+  

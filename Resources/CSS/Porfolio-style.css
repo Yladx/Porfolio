@@ -1,0 +1,63 @@
+#category-tabs .nav-link {
+  color: rgb(0, 0, 0); /* Change the text color to gray */
+}
+
+#category-tabs .nav-link.active {
+  color: rgb(54, 54, 54); /* Optional: Set active tab color */
+}
+
+
+
+.badge-container {
+  max-width: 20%; /* Adjust this value as needed */
+}
+
+.badge {
+  white-space: nowrap; /* Prevents the badge from wrapping text */
+  padding: 0.4rem 0.8rem; /* Adjust padding to fit your design */
+  font-size: 10px;
+  margin-right: 2px;
+  height: 20px;
+}
+
+#html{
+  background-color: rgb(148, 89, 68)!important;;
+
+}
+
+#cssl{
+  background-color: rgb(68, 107, 148)!important;;
+
+}
+
+#java{
+  background-color: rgb(148, 75, 68)!important;;
+
+}
+
+#cplus{
+  background-color: rgb(148, 89, 68)!important;;
+
+}
+
+#js{
+  background-color: rgb(148, 141, 68)!important;;
+
+}
+.video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+      background: #000;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    

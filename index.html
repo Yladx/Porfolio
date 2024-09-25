@@ -7,188 +7,42 @@
   <meta name="description" content="">
   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
   <meta name="generator" content="Hugo 0.72.0">
-  <title>Porfolio</title>
+  <title>Ylad_Porfolio</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+ 
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
- <style>
-*{
-    margin: 0;
-    padding: 0;
-}
 
-body {   
-  font-family: "Pixelify Sans", sans-serif;   
-          height: 100vh;      
-          margin: 0;
-          background-color: #6b6a6dbe; /* Fallback color */      
-      }
+<link rel="stylesheet" href="Resources/CSS/Style.css">
 
-
-body::before {
-            content: '';
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url(wp.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-           
-    opacity: .4;
-            z-index: -1; /* Place behind all other content */
-        }
-
-
-
-header {
-    position: relative; /* Ensure header is positioned correctly */
-    z-index: 10; /* Ensure header has a higher z-index if needed */
-}
-
-
-
-main { 
-    width: 74%;
- margin-bottom: 0;
-   padding: 8.5vw;
-border: solid springgreen;
-left: 0;
-}
-
-
-
-
- #try {
-        margin: 0;
-        padding: 0;
-            position: fixed;
-            bottom: 0vh;
-            right: 3vw;
-            width: 30vw; /* Set width relative to viewport height */
-            height: 95vh; /* Maintain aspect ratio */
-            display: block; /* Remove any extra space below the image */
-            z-index: 3;
-
-
-          
-        }
-     
- .glitch{
-  animation: glitch 2s linear infinite;
-  filter: drop-shadow(5px 0 0 rgb(86, 86, 86)) 
-  drop-shadow(0 5px 0 rgb(57, 57, 57))
-  drop-shadow(-5px 0 0 white) 
-  drop-shadow(0 -5px 0 rgb(80, 80, 80));
-
-}
-
-@keyframes glitch{
-  2%,64%{
-    transform: translate(2px,0) skew(0deg);
-  }
-  4%,60%{
-    transform: translate(-2px,0) skew(0deg);
-  }
-  62%{
-    transform: translate(0,0) skew(5deg); 
-  }
-}
-
-.glitch:before,
-.glitch:after{
-  content: attr(title);
-  position: absolute;
-  left: 0;
-}
-
-.glitch:before{
-  animation: glitchTop 1s linear infinite;
-  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
-}
-
-@keyframes glitchTop{
-  2%,64%{
-    transform: translate(2px,-2px);
-  }
-  4%,60%{
-    transform: translate(-2px,2px);
-  }
-  62%{
-    transform: translate(13px,-1px) skew(-13deg); 
-  }
-}
-
-.glitch:after{
-  animation: glitchBotom 1.5s linear infinite;
-  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
-  -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
-}
-
-@keyframes glitchBotom{
-  2%,64%{
-    transform: translate(-2px,0);
-  }
-  4%,60%{
-    transform: translate(-2px,0);
-  }
-  62%{
-    transform: translate(-22px,5px) skew(21deg); 
-  }
-}
-.dropdown-toggle::after {
-            display: none;
-        }
-    
-        btn-lg{
-          color: #4e22a8be;
-        }
-        .btn {
-    background-color: #e0e4e0; /* Button color */
-    color: #0b0b0b; /* Text color */
-    border-style: groove;
-    border: 20px white;
-    font-size: 25px;
-    margin: 5px;
-}
-.btn:hover{
-  background-color: rgb(11, 11, 11);
-}
-
-.dropdown-item i{
-  margin-right: 10px; font-size: 20px;
-} 
-
-
-
-
-
-
- </style>
 </head>
 
 <body>
      
     <header>
 
-        <div class="dropdown z-3 m-2 position-fixed">
-            <a class="btn btn-secondary btn-lg  dropdown-toggle z-3 custom-btn"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <div class="dropdown z-3 m-2 position-fixed" >
+            <a class="btn btn-secondary btn-md dropdown-toggle z-3 custom-btn"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <i class="bi bi-list"></i>
             </a>
           
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#home-start"> <i class="bi bi-house-fill"></i> Start</a></li>
+            <ul class="dropdown-menu " id="#navbar-example2">
+              <li><a class="dropdown-item" href="#start"> <i class="bi bi-house-fill"></i> Start</a></li>
               <li><a class="dropdown-item" href="#AboutMe"><i class="bi bi-person-circle"></i>About Me</a></li>
-              <li><a class="dropdown-item" href="#"><i class="bi bi-person-fill-gear"></i> Skills</a></li>
-              <li><a class="dropdown-item" href="#"><i class="bi bi-folder-fill"></i> Porfolio</a></li> 
-              <li><a class="dropdown-item" href="#"> <i class="bi bi-telephone-fill "  ></i> Contactme</a></li>
+              <li><a class="dropdown-item" href="#Skill-section"><i class="bi bi-person-fill-gear"></i> Skills</a></li>
+              <li><a class="dropdown-item" href="#Portfolio"><i class="bi bi-folder-fill"></i> Porfolio</a></li> 
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#contactme"> <i class="bi bi-telephone-fill "  ></i> Contactme</a></li>
             </ul>
           </div>
         </header>
@@ -196,35 +50,48 @@ left: 0;
    
  
    
-    <img src="pxArt.png" alt="" id="try" class="glitch">
+    <img src="Resources/pxArt.png" alt="" id="try" class="glitch">
 
    
     
        <main >
-    
-        <section id="#home-start">
+        <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example " tabindex="0">
+          
+        <section id="start">
        
           <div class="container text-center lh-1"> 
 
             <div class="container-fluid">
-              <H1 style="font-size: 50px;"><strong>HELLO IM,</strong></H1>
-              <h2>Ylad</h2>
-              <h2>an It Stundent</h2>
+              <h1 style="font-size: 50px;">
+                <strong>
+                  <span class="greeting">HELLO</span> 
+                  <span class="name">I'm,</span>
+                </strong>
+              </h1>
+              <h2>
+                <span class="first-name">Ylad</span>
+              </h2>
+              <h2>
+                <span class="description">and a <span class="change-text">  </span></span>
+              </h2>
+              
             </div>
        
-          <div class="d-flex justify-content-center align-items-center text-center mt-2">
-            <a href="#"><i class="bi bi-twitter text-dark mx-1 fs-3 p-2"></i></a>
+          <div class="d-flex justify-content-center align-items-center text-center mt-4">
             <a href="#"><i class="bi bi-facebook text-dark mx-1 fs-3 p-2"></i></a>
+            <a href="#"><i class="fa fa-codepen text-dark mx-1 fs-3 p-2"></i></a>
+          
             <a href="#"><i class="bi bi-linkedin text-dark mx-1 fs-3 p-2"></i></a>
-            <a href="#"><i class="bi bi-instagram text-dark mx-1 fs-3 p-2"></i></a>
+            <a href="#"><i class="bi bi-github text-dark mx-1 fs-3 p-2"></i></a>
           </div>
 
         </div>
+
         </section>
 
-        <section class="mt-5" style="text-align: justify;" id="AboutMe">
+        <section class="mt-5 " style="text-align: justify;" id="AboutMe">
 
-          <div class="container w-80 h-100 b-0 " > 
+          <div class="container " > 
   
             <H1 style="font-size: 50px;"><strong>ABOUT ME</strong></H1>
             
@@ -235,88 +102,254 @@ left: 0;
            leases are published on GitHub and include icon SVGs, fonts, license, andnd readme. Our package.json is also included, though our npm scripts are primarily available for our development workflows.
    
            <div class="d-flex justify-content-center align-items-center"> 
-       <!-- Modal trigger button -->
+ 
+
        <button
       
        type="button"
-       class="btn btn-primary btn-sm  w-10"
+       class="btn bg-secondary btn-sm  w-10 fa-bounce"
        data-bs-toggle="modal"
        data-bs-target="#modalId"
      >
-       Launch
+      <strong style="font-size: 20PX;"> VIEW RESUME <i class="bi bi-caret-right-fill fa fa-shake"></i>
      </button>
-     
-     <!-- Modal Body -->
-     <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
-     <div
-       class="modal fade"
-       id="modalId"
-       tabindex="-1"
-       data-bs-backdrop="static"
-       data-bs-keyboard="false"
-       
-       role="dialog"
-       aria-labelledby="modalTitleId"
-       aria-hidden="true"
-     >
-       <div
-         class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"
-         role="document"
-       >
-         <div class="modal-content">
-           <div class="modal-header">
-             <h5 class="modal-title" id="modalTitleId">
-               RESUME/CV
-             </h5>
-             <button
-               type="button"
-               class="btn-close"
-               data-bs-dismiss="modal"
-               aria-label="Close"
-             ></button>
-           </div>
-           <div class="modal-body">
-            
-            
-            <embed type="image/jpg" src="WP.jpg" width="300" height="200">
+    
           
-          </div>
-           <div class="modal-footer">
-             <button
-               type="button"
-               class="btn btn-secondary"
-               data-bs-dismiss="modal"
-             >
-               Close
-             </button>
-
-           </div>
-         </div>
-       </div>
-     </div>
-      </div>
-       
-          
-          </p> 
+    
            </div>
 
     
         </section>
+   
+        <section class="mt-5" id="Skill-section">
+          <H1 style="font-size: 50px;"><strong>SKILLS</strong></H1>
+          <p>   Releases are published on GitHub and include icon SVGs, fonts, license, and readme.          </p>
+          <div class="container">
+
+            <div class="row">
+
+      
+
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-3">
+              <div class="card clickable-card" data-bs-toggle="collapse" data-bs-target="#filetype-css" aria-expanded="false" aria-controls="collapseExample">
+                <div class="card-body text-center">
+                  <p class="card-text mb-1">
+                    <i class="bi bi-window cardbutton-icon" ></i>
+
+                  </p>
+                  <p class="card-text fs-5 mb-0">Programming</p>
+                </div>
+
+                <div class="collapse mt-2" id="filetype-css">
+                  <div class="card card-body skillpercentage">
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar" style="width: 25%"></div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
 
 
+          
+
+          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-3">
+          <div class="card clickable-card" data-bs-toggle="collapse" data-bs-target="#collapseExampl" aria-expanded="false" aria-controls="collapseExample">
+            <div class="card-body text-center">
+              <p class="card-text mb-1">
+                <i style="font-size: 80px;" class="bi bi-vignette cardbutton-icon"></i>
+              </p>
+              <p class="card-text fs-5 mb-0">Software</p>
+            </div>
+
+            <div class="collapse mt-2" id="collapseExampl">
+              <div class="card card-body skillpercentage">
+                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar" style="width: 25%"></div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
 
 
-        <section>
+     
 
+  
+</div>
+</div>
 
         </section>
+
+        <section class="mt-5" id="Portfolio">
+          <h1 style="font-size: 50px;"><strong>Portfolio</strong></h1>
+          <p>
+            Releases are published on GitHub and include icon SVGs, fonts, license, and
+            readme. Our package.json is also included, though our npm scripts are
+            primarily available for our development workflows.
+          </p>
+         
+        <div class="container mt-5">
+
+  <ul class="nav nav-tabs mb-4 " id="category-tabs">
+    <li class="nav-item ">
+      <a class="nav-link active" data-category="all" href="#">ALL</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-category="WEB" href="#">WEB</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-category="windows" href="#">WINDOWS</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-category="others" href="#">OTHERS</a>
+    </li>
+  </ul>
+
+  <div class="row" id="card-row">
+    <!-- Cards will be appended here -->
+  </div>
+</div>
+
+         
+          
+        </section>
+        
+
+        <hr style="height: 3px; background-color: #393939; ">
+
+
+ <section class="mt-5" id="contactme">
+  <div class="container text-center" > 
+    <h1>Let's Connect</h1>
+    <p>   Releases are published on GitHub and include icon SVGs, fonts, license, and readme.     </p>
+    <div class="container bg-secondary" style="width: 100%; height: auto; border: double 10px black; padding: 20px;">
+      <form action="mailto:jeraruvirtucio@gmail.com" method="post" enctype="text/plain">
+        <div class="mb-3">
+          <label for="nameInput" class="form-label">Name</label>
+          <input type="text" class="form-control" id="nameInput" name="Name" placeholder="Your Name" required>
+        </div>
+        <div class="mb-3">
+          <label for="emailInput" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="emailInput" name="Email" placeholder="name@example.com" required>
+        </div>
+        <div class="mb-3">
+          <label for="messageTextarea" class="form-label">Message</label>
+          <textarea class="form-control" id="messageTextarea" name="Message" rows="3" placeholder="Your message here..." required></textarea>
+        </div>
+        <div class="d-flex justify-content-end">
+          <button type="submit" class="btn btn-sm btn-outline-primary">Send</button>
+        </div>
+      </form>
+    </div>
+    
+    
+
+  </div>
+
+
+
+
+
+</section>
+
+
+        
+      </div>
             </main>
 
-       
-           
+            <div id="modals"></div>
 
+      <!--RESUME MODAL-->
+     <div
+     class="modal fade"
+     id="modalId"
+     tabindex="-1"
+     data-bs-backdrop="static"
+     data-bs-keyboard="false"
+     
+     role="dialog"
+     aria-labelledby="modalTitleId"
+     aria-hidden="true"
+   >
+     <div
+       class="modal-dialog modal-dialog-scrollable modal-dialog-centered custom-modal-size"
+       role="document"
+     >
+       <div class="modal-content">
+         <div class="modal-header">
+        
+            <H1 class="modal-title" id="modalTitleId" style="font-size: 50px;"><strong>RESUME</strong></H1>
+         
+           <button
+             type="button"
+             class="btn-close"
+             data-bs-dismiss="modal"
+             aria-label="Close"
+           ></button>
+         </div>
+         <div class="modal-body">
+          <div class="modal-body">
+            <div class="container-fluid p-5">
+              <div class="row">
+                <!-- Column that spans 2 rows -->
+                <div class="col-lg-6 col-md-12">
+                  <div class="d-flex flex-column h-100" >
+                    <span><i class="fa fa-briefcase"></i> <h1 style="display: inline; margin-left: 10px;">Work Experience</h1></span>
 
+                    <div class="row timeline-centered">
+                      <div class="col-md-12 timelineMAIN-title">
+                        <ul class="timeline timeline-centered" id="workExpContainer">
+                          <!-- Timeline items will be dynamically injected here by JavaScript -->
+                        </ul>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+          
+                <!-- Column that spans 1 row -->
+                <div class="col-lg-6 col-md-12">
+                  <div class="p-3 bg-light">
+                    <h1>Educational Background</h1>
+                    <ul class="list-unstyled">
+                      <li>
+                        <h5>Bachelor of Science in Computer Science</h5>
+                        <p>University Name, Graduation Year</p>
+                      </li>
+                      <li>
+                        <h5>Associate Degree in Web Development</h5>
+                        <p>College Name, Graduation Year</p>
+                      </li>
+                      <li>
+                        <h5>High School Diploma</h5>
+                        <p>High School Name, Graduation Year</p>
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <div class="mt-2 p-3 flex-fill bg-light">
+                    <h1>Hobby</h1>
 
+                  </div>
+                </div>
+              </div>
+          
+              
+            </div>
+          </div>
+          
+       </div>
+     </div>
+   </div>
+    </div>
+     
+    <footer style="height: 30px; background-color: rgb(72, 72, 71); width:100%; margin-bottom: 0; display: flex; justify-content: center; align-items: center;">
+      <p style="margin: 0;">&copy; 2024 Ylad. All Rights Reserved.</p>
+    </footer>
+    
+<script src="projectload.js"></script>
+<script src="loadworkexp.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
   

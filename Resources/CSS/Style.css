@@ -1,0 +1,264 @@
+
+@import url('Animation.css');
+@import url('Porfolio-style.css');
+@import url('Resume.css');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {   
+  font-family: "Pixelify Sans", sans-serif;   
+          height: 100vh;      
+          margin: 0;
+          background-color: #6b6a6dbe;     
+       
+      }
+
+body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('../wp.gif');
+            background-repeat: no-repeat;
+            background-size: cover;
+           
+    opacity: .3;
+            z-index: -1;
+        }
+
+h1{
+  font-family: "Jersey 10", sans-serif;
+  font-weight: bold;
+}
+
+header {
+    position: relative;
+    z-index: 10;
+}
+
+
+section{
+  padding: 3.0vw;
+ 
+}
+
+.list-unstyled {
+  list-style-type: disc; /* Use bullets */
+  padding-left: 20px; /* Indent for better readability */
+}
+#try {
+        margin: 0;
+        padding: 0;
+            position: fixed;
+            bottom: 0vh;
+            right: 3vw;
+            width: 30vw;
+            height: 95vh;
+            display: block;
+            z-index: 3;
+        
+        }
+
+main { 
+    width: 74%;
+ margin-bottom: 0;
+   padding: 5.5vw;
+
+left: 0;
+}
+
+
+.greeting {
+  color: #000000;
+}
+.name {
+  color: #000000;
+}
+.first-name {
+  font-weight: bold;
+}
+.description {
+  font-style: italic;
+}
+
+
+
+#AboutMe{
+  border: double 10px rgba(72, 72, 72, 0.695);
+  background-color: rgba(245, 245, 245, 0.421);
+}
+
+
+.btn:hover{
+  background-color: rgb(11, 11, 11);
+}
+
+.dropdown-item i{
+  margin-right: 10px; font-size: 20px;
+} 
+
+.cardbutton-icon {
+  color: rgba(245, 245, 245, 0.786);
+  font-size: 100px; /* Increase size */
+  font-weight: bold; /* Add weight */
+  filter: drop-shadow(5px 0 0 rgb(86, 86, 86))
+          drop-shadow(0 5px 0 rgb(210, 198, 198))
+          drop-shadow(0 -5px 0 rgb(148, 143, 143));
+}
+
+
+.card{
+  background: transparent;
+ border: none;
+}
+
+
+
+.clickable-card {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+}
+
+
+.clickable-card:hover {
+  animation: beating 0.6s infinite;
+}
+
+
+.clickable-card:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+
+
+
+.custom-modal-size {
+  max-width: 97vw;
+
+  width: 97vw;
+  height: auto;
+}
+
+
+.modal-content {
+  height: 100%;
+}
+
+
+
+.modal-content{
+background-color: #c8c4c3f6;
+border-radius: 0;
+
+border: double 10px rgba(137, 132, 132, 0.645);
+}
+
+
+
+.Porfolio-card{
+  background-color: rgba(239, 234, 234, 0.452);
+  border: double 5px rgb(104, 103, 103);
+
+  }
+
+  .Porfolio-card img {
+    border: double 3px rgb(128, 128, 128);
+    image-rendering: pixelated; /* Correct usage */
+    filter: grayscale(80%);
+   
+    width: 100%;
+    height: 80px;
+
+  }
+   .progress-bar{
+    background-color: rgb(113, 113, 113);
+    border-radius: 0;
+    border-style: double;
+   }
+
+
+
+
+@media (min-width: 350px) {
+  main {
+    width: 100%;
+  }
+  #try {
+    width: 30vw;
+    height: 45vh;
+  }
+
+  .project-title{
+    font-size: 12px;
+
+  }
+}
+
+@media (min-width: 768px) {
+  main {
+    width: 85%;
+  }
+  #try {
+    width: 30vw;
+            height: 95vh;
+  }
+
+  .project-title{
+    font-size: 17px;
+
+  }
+}
+
+
+@media (min-width: 992px) {
+  main {
+    width: 74%;
+  }
+  #try {
+    width: 30vw;
+            height: 95vh;
+  }
+
+  .project-title{
+    font-size: 17px;
+
+  }
+}
+
+
+@media (min-width: 1200px) {
+  main {
+    width: 74%;
+  }
+  #try {
+    width: 30vw;
+    height: 95vh;
+  }
+
+  .project-title{
+    font-size: 20px;
+
+  }
+}
+
+
+@media (min-width: 1400px) {
+  main {
+    width: 74%;
+  }
+  #try {
+    width: 30vw;
+            height: 95vh;
+  }
+
+  .project-title{
+    font-size: 25px;
+
+  }
+}
